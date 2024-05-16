@@ -146,7 +146,6 @@ header {
 }
 
 .hero-container {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,8 +164,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 250px;
+  min-width: 300px;
+  min-height: 250px;
 }
 
 .drake-header-text {
@@ -355,17 +354,110 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .hero-container {
+    display: block;
+    padding: 4rem;
+    margin-top: 80px;
+    position: relative;
+  }
+
   .hero-background-decoration {
-    height: 450px;
-    top: -150px;
+    height: 600px;
+    top: -200px;
   }
 
-  .hero-paragraph-container {
+  .hero-image {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    right: 30px;
+    bottom: 40px;
+  }
+
+  .hero-image-text-container {
+    float: left;
+  }
+
+  .hero-info-container {
+    display: block;
     background-color: white;
+    padding: 25px;
   }
 
-  .hero-image-container {
-    max-width: 350px;
-    min-height: 350px;
+  .hero-about-me {
+    font-size: clamp(2rem, 5vw + 5px, 6rem);
+    text-align: center;
+  }
+
+  .hero-paragraph {
+    font-size: 1.7rem;
+  }
+
+  .drake-header-text {
+    position: absolute;
+    top: -60px;
+    bottom: 0px;
+    left: 50px;
+    font-size: 3rem;
+    text-wrap: nowrap;
+  }
+
+  .hero-icons {
+    display: none;
+  }
+
+  main {
+    margin-top: 0rem;
+    padding: 20px;
+  }
+
+  .main-heading-text {
+    font-size: 2.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .screenshot {
+    height: 220px;
+  }
+
+  .project {
+    max-width: 300px;
+  }
+
+  .proj-info {
+    height: 150px;
+  }
+
+  .proj-description {
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  footer {
+    margin-top: 11rem;
+    padding: 2.5rem;
+    flex-direction: row;
+  }
+
+  .footer-image {
+    height: 300px;
+    width: 500px;
+  }
+
+  .footer-main-text {
+    font-size: 2rem;
+  }
+
+  .footer-secondary-text {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .footer-links {
+    margin-top: 2rem;
+    gap: 1.5rem;
   }
 }
