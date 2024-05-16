@@ -267,7 +267,8 @@ main {
 .proj-3,
 .proj-4,
 .proj-5,
-.proj-6 {
+.proj-6,
+.footer-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,4 +296,46 @@ main {
 
 .proj-6 {
   background-image: url(./assets/library-screenshot.png);
+}
+
+footer {
+  margin-top: 6rem;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info {
+  padding: 30px;
+}
+
+.footer-main-text {
+  font-size: clamp(2rem, 5vw + 5px, 6rem);
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.footer-secondary-text {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 5vw, 4rem);
+  line-height: 1.5em;
+  font-family: teacher, Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links img {
+  height: 50px;
+}
+
+.footer-image {
+  background-image: url(./assets/jester.png);
+  height: 250px;
+  width: 100vw;
 }
