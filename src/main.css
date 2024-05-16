@@ -154,9 +154,6 @@ header {
 
 .hero-image-text-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .hero-image {
@@ -164,8 +161,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 300px;
-  min-height: 250px;
+  height: clamp(10vw, 80vw, 70vw);
+  width: clamp(10vw, 80vw, 70vw);
 }
 
 .drake-header-text {
