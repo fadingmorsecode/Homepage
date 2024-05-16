@@ -145,21 +145,34 @@ header {
   align-items: center;
 }
 
-.hero-image-container {
+.hero-container {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero-image-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
   background-image: url(./assets/drake-hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 250px;
-  width: 80vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 10px;
+  width: 300px;
+  height: 250px;
 }
 
-.hero-image-container p {
+.drake-header-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   font-size: clamp(1.5rem, 12vw, 5rem);
   word-wrap: break-word;
   color: white;
@@ -184,12 +197,13 @@ header {
   padding: 20px;
 }
 
-.hero-paragraph-container h1 {
+.hero-about-me {
   font-size: clamp(2rem, 10vw + 10px, 6rem);
   font-family: poppins, Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
 }
 
-.hero-paragraph-container p {
+.hero-paragraph {
   margin-top: 2rem;
   font-size: clamp(1rem, 5vw, 3rem);
   font-family: teachers, Georgia, "Times New Roman", Times, serif;
@@ -338,4 +352,20 @@ footer {
   background-image: url(./assets/jester.png);
   height: 250px;
   width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-background-decoration {
+    height: 450px;
+    top: -150px;
+  }
+
+  .hero-paragraph-container {
+    background-color: white;
+  }
+
+  .hero-image-container {
+    max-width: 350px;
+    min-height: 350px;
+  }
 }
