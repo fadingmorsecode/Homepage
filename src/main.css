@@ -115,7 +115,7 @@ header {
   background-color: blue;
   height: 300px;
   top: -100px;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   transform: skew(0deg, -15deg);
 }
