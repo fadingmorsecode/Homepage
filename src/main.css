@@ -92,19 +92,14 @@ header {
 }
 
 .hero-image {
-  background-image: url(./assets/drake-hero-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: clamp(10vw, 80vw, 70vw);
-  width: clamp(10vw, 80vw, 70vw);
 }
 
 .drake-header-text {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: clamp(1.5rem, 12vw, 5rem);
+  font-size: clamp(1rem, 8vw, 5rem);
   word-wrap: break-word;
   color: white;
   font-family: poppins, Arial, Helvetica, sans-serif;
@@ -132,6 +127,7 @@ header {
   font-size: clamp(2rem, 10vw + 10px, 6rem);
   font-family: poppins, Arial, Helvetica, sans-serif;
   margin-top: 3rem;
+  text-align: center;
 }
 
 .hero-paragraph {
@@ -305,11 +301,11 @@ footer {
   }
 
   .hero-image {
-    width: 300px;
-    height: 350px;
+    width: auto;
+    height: 450px;
     position: relative;
-    right: 30px;
-    bottom: 40px;
+    right: 35px;
+    bottom: 45px;
   }
 
   .hero-image-text-container {
@@ -436,7 +432,7 @@ footer {
 
   .hero-image {
     height: clamp(25vw, 35vw, 45vw);
-    width: clamp(25vw, 35vw, 45vw);
+    width: auto;
     position: static;
   }
 
@@ -445,7 +441,7 @@ footer {
     top: auto;
     bottom: 10px;
     left: 10px;
-    font-size: 3rem;
+    font-size: clamp(1rem, 4vw, 5rem);
     text-wrap: wrap;
   }
 
