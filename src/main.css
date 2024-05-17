@@ -178,11 +178,11 @@ header {
 .hero-background-decoration {
   position: absolute;
   background-color: blue;
-  height: 250px;
+  height: 300px;
   top: -100px;
   width: 100vw;
   z-index: -1;
-  transform: skew(0deg, -20deg);
+  transform: skew(0deg, -15deg);
 }
 
 .hero-paragraph-container {
@@ -378,6 +378,7 @@ footer {
   .hero-info-container {
     display: block;
     background-color: white;
+    box-shadow: 2px 4px 5px grey;
     padding: 25px;
   }
 
@@ -437,6 +438,7 @@ footer {
     margin-top: 11rem;
     padding: 2.5rem;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .footer-image {
@@ -456,5 +458,74 @@ footer {
   .footer-links {
     margin-top: 2rem;
     gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-background-decoration {
+    transform: skew(0deg, -10deg);
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 3rem;
+  }
+
+  .hero-info-container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(30vw, 50vw, 60vw);
+  }
+
+  .hero-icons {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .hero-about-me {
+    font-size: clamp(2rem, 2vw + 15px, 6rem);
+    text-align: start;
+  }
+
+  .hero-paragraph {
+    font-size: clamp(1rem, 1vw + 7px, 6rem);
+  }
+
+  .hero-image {
+    height: clamp(25vw, 35vw, 45vw);
+    width: clamp(25vw, 35vw, 45vw);
+    position: static;
+  }
+
+  .drake-header-text {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 10px;
+    font-size: 3rem;
+    text-wrap: wrap;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  .footer-secondary-text {
+    margin-top: 2rem;
+  }
+
+  .footer-links {
+    margin-top: 2rem;
+  }
+
+  .footer-image {
+    height: 350px;
+    width: 350px;
   }
 }
