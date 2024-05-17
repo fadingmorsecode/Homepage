@@ -144,6 +144,8 @@ table {
   border-spacing: 0;
 }
 
+/* Header Styles */
+
 header {
   display: flex;
   flex-direction: column;
@@ -221,6 +223,8 @@ header {
 .hero-icons img {
   min-height: 40px;
 }
+
+/* Main Styles */
 
 main {
   display: flex;
@@ -314,6 +318,8 @@ main {
   background-image: url(./assets/library-screenshot.png);
 }
 
+/* Footer Styles */
+
 footer {
   margin-top: 6rem;
   background-color: blue;
@@ -355,6 +361,8 @@ footer {
   height: 250px;
   width: 100vw;
 }
+
+/* Tablet Query */
 
 @media screen and (min-width: 600px) {
   .hero-container {
@@ -466,6 +474,8 @@ footer {
     gap: 1.5rem;
   }
 }
+
+/* Desktop Query */
 
 @media screen and (min-width: 1000px) {
   .hero-background-decoration {
