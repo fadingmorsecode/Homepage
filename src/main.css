@@ -197,13 +197,13 @@ main {
   padding-top: 1rem;
 }
 
-.proj-header-info > p {
-  font-size: 1.5rem;
+.proj-header-info > h4 {
+  font-size: 1.4rem;
   font-family: poppins, Arial, Helvetica, sans-serif;
 }
 
 .proj-description {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem;
   font-size: 1.1rem;
   font-family: teacher, Georgia, "Times New Roman", Times, serif;
   line-height: 1.5rem;
@@ -291,7 +291,7 @@ footer {
 
 /* Tablet Query */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .hero-container {
     display: block;
     padding: 4rem;
@@ -339,6 +339,7 @@ footer {
     left: 50px;
     font-size: 3rem;
     text-wrap: nowrap;
+    z-index: 1;
   }
 
   .hero-icons {
@@ -360,10 +361,6 @@ footer {
 
   .screenshot {
     height: 220px;
-  }
-
-  .project {
-    max-width: 300px;
   }
 
   .proj-info {
