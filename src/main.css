@@ -487,6 +487,7 @@ footer {
   .hero-about-me {
     font-size: clamp(2rem, 2vw + 15px, 6rem);
     text-align: start;
+    margin-top: 0;
   }
 
   .hero-paragraph {
