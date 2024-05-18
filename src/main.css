@@ -175,6 +175,7 @@ main {
 
 .screenshot {
   height: 250px;
+  width: 100%;
 }
 
 .proj-links {
@@ -203,42 +204,6 @@ main {
   font-size: 1.1rem;
   font-family: teacher, Georgia, "Times New Roman", Times, serif;
   line-height: 1.5rem;
-}
-
-.proj-1,
-.proj-2,
-.proj-3,
-.proj-4,
-.proj-5,
-.proj-6,
-.footer-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.proj-1 {
-  background-image: url(./assets/battleship-screenshot.png);
-}
-
-.proj-2 {
-  background-image: url(./assets/weather-app-screenshot.png);
-}
-
-.proj-3 {
-  background-image: url(./assets/todo-list-screenshot.png);
-}
-
-.proj-4 {
-  background-image: url(./assets/tic-tac-toe-screenshot.png);
-}
-
-.proj-5 {
-  background-image: url(./assets/restaurant-page-screenshot.png);
-}
-
-.proj-6 {
-  background-image: url(./assets/library-screenshot.png);
 }
 
 /* Footer Styles */
@@ -280,9 +245,7 @@ footer {
 }
 
 .footer-image {
-  background-image: url(./assets/jester.png);
-  height: 250px;
-  width: 100vw;
+  height: auto;
 }
 
 /* Tablet Query */
